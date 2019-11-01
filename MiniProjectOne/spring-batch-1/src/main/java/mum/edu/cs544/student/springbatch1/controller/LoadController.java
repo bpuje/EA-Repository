@@ -18,7 +18,7 @@ import java.util.List;
 import java.util.Map;
 
 @RestController
-@RequestMapping(value = {"/","/load"})
+@RequestMapping("/load")
 public class LoadController {
 
     @Autowired
@@ -51,10 +51,6 @@ public class LoadController {
         return jobExecution.getStatus().toString() + "<br>" + studentService.findAll();
     }
 
-//    @GetMapping(value = {"", "/load"})
-//    public String index() {
-//        return "/login";
-//    }
 
     @GetMapping("/user")
     public String user(){

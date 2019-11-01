@@ -17,16 +17,16 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
         User.UserBuilder users = User.withDefaultPasswordEncoder();
 
-        auth.inMemoryAuthentication().withUser(users.username("puje").password("test").roles("USER"));
-        auth.inMemoryAuthentication().withUser(users.username("nat").password("test").roles("USER"));
-        auth.inMemoryAuthentication().withUser(users.username("admin").password("test").roles("ADMIN"));
+        auth.inMemoryAuthentication().withUser(users.username("user").password("user").roles("USER"));
+        auth.inMemoryAuthentication().withUser(users.username("puje").password("user").roles("USER"));
+        auth.inMemoryAuthentication().withUser(users.username("admin").password("admin").roles("ADMIN"));
     }
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http
                 .authorizeRequests()
-                .antMatchers("/").authenticated()
+                //.antMatchers("/").authenticated()
                 .antMatchers("/load", "/admin").hasRole("ADMIN")
                 .antMatchers("/user").hasAnyRole("USER")
                 .antMatchers("/student").authenticated()
