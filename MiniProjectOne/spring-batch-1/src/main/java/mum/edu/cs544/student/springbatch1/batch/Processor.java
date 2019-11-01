@@ -4,6 +4,8 @@ import mum.edu.cs544.student.springbatch1.model.Student;
 import org.springframework.batch.item.ItemProcessor;
 import org.springframework.stereotype.Component;
 
+import java.time.LocalDate;
+import java.time.Month;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
@@ -26,8 +28,9 @@ public class Processor implements ItemProcessor<Student, Student> {
 //        String majorCode = student.getMajor();
 //        String major = MAJOR_NAMES.get(majorCode);
 //        student.setMajor(major);
-//        student.setDateOfBirth(new Date());
-//        System.out.println(String.format("Converted from [%s] to [%s]", majorCode, major));
+//        //student.setDateOfBirth(new Date());
+
+        //System.out.println(String.format("Converted from [%s] to [%s]", majorCode, major));
         return student;
     }
 }

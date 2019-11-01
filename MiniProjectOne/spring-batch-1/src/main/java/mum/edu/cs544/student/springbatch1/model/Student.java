@@ -3,6 +3,7 @@ package mum.edu.cs544.student.springbatch1.model;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import java.time.LocalDate;
+import java.util.Date;
 
 @Entity
 public class Student {

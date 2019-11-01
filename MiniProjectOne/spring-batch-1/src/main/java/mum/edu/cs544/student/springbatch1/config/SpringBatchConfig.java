@@ -32,7 +32,7 @@ public class SpringBatchConfig {
                    ItemReader<Student> itemReader,
                    ItemProcessor<Student, Student> itemProcessor,
                    ItemWriter<Student> itemWriter
-    ) {
+                    ) {
 
         Step step = stepBuilderFactory.get("ETL-file-load")
                 .<Student, Student>chunk(100)
