@@ -5,7 +5,9 @@ Mini project of Enterprise Architecture course
 
 ## Getting Started
 
-if you logged in by admin you can see the batch process result (Spring batch), if you logged in by user, you will be faced Forbidden to do the batch process. Then logout and login by admin to see the result. (Spring Security).
+Save students data(FirsName, LastName, GPA, DOB) to MySQL database using the Spring batch and the Spring security from the CSV file is a purpose mini-project.
+
+Write to DB of Using Spring batch from .csv file 
 We need three command to build mini project. Execute Project with Docker.
 
 
@@ -34,8 +36,7 @@ $ docker-compose up -d
 ```
 
 ### Step 3: Running the Mini Project
-
-if you logged in by admin you can see the batch process result (Spring batch), if you logged in by user, you will be faced Forbidden to do the batch process. Then logout and login by admin to see the result. (Spring Security).
+If you logged in by admin you can see the batch process result (Spring batch), if you logged in by user, you will be faced Forbidden to do the batch process. Then logout and login by admin to see the result. (Spring Security).
 
 ### http://localhost:4446
 Admin account:
