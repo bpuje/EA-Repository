@@ -70,7 +70,7 @@ Logout and login by admin to see the result. (Spring Security).
 * [Maven](https://maven.apache.org/) - Dependency Management
 * [Docker](https://hub.docker.com) - Docker and usage of docker-compose.
 
-## Authors
+## Author
 
 * **Purevdemberel Byambatogtokh** - *986799* - [GithubProject](https://github.com/git2hub17/EA-Repository/tree/master/MiniProjectOne/spring-batch-1)
 
