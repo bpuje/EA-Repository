@@ -17,22 +17,16 @@ Clone this repo to your local machine using https://github.com/git2hub17/EA-Repo
 
 ### Step 2: Setup
 
-> Build jar file from my project
+> run project
  
 ```
-$ mvn package
+$ chmod +x ./start.sh
 ```
 
-> now build application to docker
-
+> if my app do not start you can write below command 
+ 
 ```
-$ docker build -t springbootapp .
-```
-
-> run at docker compose and connecting images
-
-```
-$ docker-compose up -d
+$ ./start.sh
 ```
 
 ### Step 3: Running the Mini Project
