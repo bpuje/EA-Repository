@@ -64,7 +64,6 @@ public class LoadController {
 
     @GetMapping("/error")
     public String forbidden(){
-        return "<h1>This user can not access.</h2>";
-
+        return "<h1>This user permission does not enough to reach it.</h2>";
     }
 }
