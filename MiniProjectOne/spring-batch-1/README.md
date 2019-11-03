@@ -13,7 +13,7 @@ We need three command to build mini project. Execute Project with Docker.
 
 ### Step 1: Clone
 
-Clone this repo to your local machine using https://github.com/git2hub17/EA-Repository/tree/master/MiniProjectOne/spring-batch-1
+Clone this repo to your local machine using https://github.com/git2hub17/EA-MiniProj1
 
 ### Step 2: Setup
 
