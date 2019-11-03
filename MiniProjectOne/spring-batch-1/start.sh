@@ -44,7 +44,7 @@ echo "--------------------------------------------------------"
 #echo "Now composing 2 containers which are related my spring-boot-app and mysql using docker-compose.yml file."
 #echo "--------------------------------------------------------"
 mvn clean
-mvn package
+mvn -Dmaven.test.skip=true package
 docker build -t springbootapp .
 
 docker-compose up -d

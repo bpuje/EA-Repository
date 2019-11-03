@@ -11,7 +11,7 @@ services:
       - 4446:4446
     command: >
       /bin/bash -c "
-              while ! nc -z mystudentsdb 3306;
+              while ! nc -z productdb 3306;
               do
                 echo sleeping;
                 sleep 1;
